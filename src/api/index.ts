@@ -30,4 +30,4 @@ export const stopSystem = async (): Promise<void> => {
 export const getActivityLogs = async (): Promise<ActivityLog[]> => {
   const response = await axios.get(`${API_BASE_URL}/logs`);
   return response.data;
-}; 
+};

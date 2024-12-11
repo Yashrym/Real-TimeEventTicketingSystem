@@ -3,13 +3,23 @@ import { startSystem, stopSystem } from '../api';
 
 const ControlPanel: React.FC = () => {
   const handleStartSystem = async () => {
-    await startSystem();
-    // Display a success message or update the UI as needed
+    try {
+      await startSystem();
+      // Display a success message or update the UI as needed
+    } catch (error) {
+      console.error('Error starting the system:', error);
+      // Display an error message
+    }
   };
 
   const handleStopSystem = async () => {
-    await stopSystem();
-    // Display a success message or update the UI as needed
+    try {
+      await stopSystem();
+      // Display a success message or update the UI as needed
+    } catch (error) {
+      console.error('Error stopping the system:', error);
+      // Display an error message
+    }
   };
 
   return (

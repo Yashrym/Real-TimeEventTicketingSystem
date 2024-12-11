@@ -6,12 +6,18 @@ import LogDisplay from './components/LogDisplay';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>Real-Time Ticketing System</h1>
+    <div className="app-container">
+      <h1 className="main-topic">Real Time Ticketing System</h1>
       <ConfigurationForm />
-      <TicketDisplay />
-      <ControlPanel />
-      <LogDisplay />
+      <div className="centered-content">
+        <div className="shared-style">
+          <TicketDisplay />
+        </div>
+        <ControlPanel />
+        <div className="shared-style">
+          <LogDisplay />
+        </div>
+      </div>
     </div>
   );
 };

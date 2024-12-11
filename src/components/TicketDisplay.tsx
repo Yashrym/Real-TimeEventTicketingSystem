@@ -14,9 +14,9 @@ const TicketDisplay: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Available Tickets</h2>
-      <table>
+    <div className="ticket-container">
+      <h2 className="title">Available Tickets</h2>
+      <table className="ticket-table">
         <thead>
           <tr>
             <th>ID</th>

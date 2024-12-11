@@ -23,9 +23,9 @@ const ControlPanel: React.FC = () => {
   };
 
   return (
-    <div>
-      <button onClick={handleStartSystem}>Start System</button>
-      <button onClick={handleStopSystem}>Stop System</button>
+    <div className="control-panel">
+      <button className='start-button' onClick={handleStartSystem}>Start System</button>
+      <button className='stop-button' onClick={handleStopSystem}>Stop System</button>
     </div>
   );
 };
